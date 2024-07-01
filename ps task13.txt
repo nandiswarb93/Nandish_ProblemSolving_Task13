@@ -1,0 +1,136 @@
+str = "Good Bye".replaceAll(" ","")
+console.log(str)
+emp = []
+l=str.toLowerCase().split("").sort()
+for(i of l)
+{
+    if(!emp.includes(i))
+    {
+        emp.push(i)
+    }
+}
+console.log(emp)
+console.log("upper case first : ")
+for( i of emp)
+{
+    c=0
+    for(j of l)
+    {
+        if(i == j)
+        c++
+    }
+    if(str.includes(i.toUpperCase()))
+    {
+    console.log(i.toUpperCase(),c)
+    }
+}
+console.log("lower case second")
+for( i of emp)
+{
+    c=0
+    for(j of l)
+    {
+        if(i == j)
+        c++
+    }
+    if(str.includes(i.toLowerCase()))
+    {
+        console.log(i.toLowerCase(),c)
+    }
+}
+
+str = "Good Bye".replaceAll(" ","")
+console.log(str)
+emp = []
+l=str.toLowerCase().split("").sort()
+for(i of l)
+{
+    if(!emp.includes(i))
+    {
+        emp.push(i)
+    }
+}
+console.log(emp)
+
+console.log("Lower case first : ")
+for( i of emp)
+{
+    c=0
+    for(j of l)
+    {
+        if(i == j)
+        c++
+    }
+    if(str.includes(i.toLowerCase()))
+    {
+        console.log(i.toLowerCase(),c)
+    }
+}
+console.log("upper case second")
+for( i of emp)
+{
+    c=0
+    for(j of l)
+    {
+        if(i == j)
+        c++
+    }
+    if(str.includes(i.toUpperCase()))
+    {
+    console.log(i.toUpperCase(),c)
+    }
+}
+
+
+
+
+n = "programming"
+vowels = "aeiouAEIOU",res = "",rev = "",ind = 0
+for(i of n)
+{
+    if(vowels.includes(i))
+    {
+        rev = i + rev 
+    }
+}
+console.log(rev);
+for(i in n)
+{
+    if(vowels.includes(n[i]))
+    {
+        res  += rev[ind]
+        ind++;
+    }else
+    {
+        res += n[i]
+    }
+}
+console.log(res)
+
+
+
+o/p:
+
+
+GoodBye
+[ 'b', 'd', 'e', 'g', 'o', 'y' ]
+upper case first : 
+B 1
+G 1
+lower case second
+d 1
+e 1
+o 2
+y 1
+GoodBye
+[ 'b', 'd', 'e', 'g', 'o', 'y' ]
+Lower case first : 
+d 1
+e 1
+o 2
+y 1
+upper case second
+B 1
+G 1
+iao
+vowels are printed in reverse in the given string  : prigrammong
